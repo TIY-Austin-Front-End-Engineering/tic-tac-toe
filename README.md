@@ -40,28 +40,28 @@ After completing this assignment, you be able to effectively use
 You will create a two player tic-tac-toe game. The game should start by asking for player one's name and then player two's name. At each stage of the game the current game board should be displayed like so:
 
 ```
-    1   2   3
-  ~~~~~~~~~~~~~
-1 |   |   |   |
-  ~~~~~~~~~~~~~
-2 |   |   |   |
-  ~~~~~~~~~~~~~
-3 |   |   |   |
-  ~~~~~~~~~~~~~
+	    1   2   3
+	  ~~~~~~~~~~~~~
+	1 |   |   |   |
+	  ~~~~~~~~~~~~~
+	2 |   |   |   |
+	  ~~~~~~~~~~~~~
+	3 |   |   |   |
+	  ~~~~~~~~~~~~~
 ```
 (this would be an example of a game before that first move has been made)
 
 After displaying the game board your game should prompt the current player for their move. Players will enter their moves int he form of coordinates. For example if a player enters `1 1` then their mark (either X or O) will be placed in the upper left corner. The x (horizontal) coordinate is the first number and the y (vertical) coordinate is the second number that will be entered by the user. For example, `2 1` would place a mark like so:
 
 ```
-    1   2   3
-  ~~~~~~~~~~~~~
-1 |   | X |   |
-  ~~~~~~~~~~~~~
-2 |   |   |   |
-  ~~~~~~~~~~~~~
-3 |   |   |   |
-  ~~~~~~~~~~~~~
+	    1   2   3
+	  ~~~~~~~~~~~~~
+	1 |   | X |   |
+	  ~~~~~~~~~~~~~
+	2 |   |   |   |
+	  ~~~~~~~~~~~~~
+	3 |   |   |   |
+	  ~~~~~~~~~~~~~
 ```
 
 * If a player enters invalid format for their input (ie. there are not two numbers, or they don't separate the numbers with a space) they should be given the error *Invalid input: you must enter the x and y coordinates separated by spaces* and then prompted to enter coordinates again. They should continue to be prompted for coordinates until they don't get an error.
@@ -80,7 +80,9 @@ Change your game to be a one player game where you play against a computer AI th
 
 ## Notes
 
-Notes go here...
+* You will likely need to use the string .split(...) method to get the x and y coordinates from the user input.
+* You might want to use parseInt(...) to convert strings to numbers.
+* The best way to keep track of the game board is with an array of length three with three arrays inside of it (also length three) that store either an 'X' or 'O' value.
 
 ## Additional Resources
 
