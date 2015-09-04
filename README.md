@@ -83,6 +83,9 @@ Change your game to be a one player game where you play against a computer AI th
 * You will likely need to use the string .split(...) method to get the x and y coordinates from the user input.
 * You might want to use parseInt(...) to convert strings to numbers.
 * The best way to keep track of the game board is with an array of length three with three arrays inside of it (also length three) that store either an 'X' or 'O' value.
+* Below is a flow chart of how the game could be structured
+
+![Flow Chart](flow-chart.png)
 
 ## Additional Resources
 
